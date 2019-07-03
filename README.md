@@ -22,8 +22,9 @@ Adminset基于DevOps理念开发，以整合全部运维场景为己任。Admins
     安装之前请关闭防火墙
 ```
 git clone https://github.com/guohongze/adminset.git
-adminset/install/server/auto_install.sh
+adminset/install/server/auto_install.sh  （如果服务器默认安装了requests==2.6.0在自动安装时候无法删除报错的话，需/usr/lib/python2.7/site-packages移动原有的requests，一共两个文件requests和requests-2.6.0-py2.7.egg-info-bak，然后重新运行auto_install.sh）
 ```
+
 说明：手动自定义安装请使用
 adminset/install/server/server_install.sh
 
